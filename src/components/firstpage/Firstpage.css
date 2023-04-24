@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+button>div>img{
+    height: 19px;
+    width: 34px;
+}
+.header{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #F6F0ED;
+    border: 1px solid whitesmoke;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.header > button{
+    position: absolute;
+    margin-left: -750px;
+    /* background-color: rgb(2, 2, 63); */
+    color: #F6F0ED;
+    margin-top: 5px;
+    padding: 3px;
+    border-radius: 12px 12px 12px 12px;
+    cursor: pointer;
+}
+.container{
+    text-align: center;
+    position: relative;
+    margin-top: 3px;
+    background-color: #F6F0ED;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+}
+
+.pokemons{
+    padding: 55px;
+    background-color: black;
+    color: #F6F0ED;
+    margin-right: 30px;
+    height: 50px;
+    border-radius: 20px 20px 20px 20px;
+    width: 200px;
+    cursor: pointer;
+}
+.items{
+    padding: 55px;
+    background-color: black;
+    color: #F6F0ED;
+    margin-right: 20px;
+    height: 50px;
+    border-radius: 20px 20px 20px 20px;
+    width: 200px;
+    cursor: pointer;
+}
+.moves{
+    padding: 55px;
+    background-color: black;
+    color: #F6F0ED;
+    margin-right: 20px;
+    height: 50px;
+    border-radius: 20px 20px 20px 20px;
+    width: 200px;
+    cursor: pointer;
+}
+.team{
+    padding: 55px;
+    background-color: black;
+    color: #F6F0ED; 
+    margin-right: 20px;
+    height: 50px; 
+    border-radius: 20px 20px 20px 20px;
+    width: 200px;
+    cursor: pointer;
+}
+.pokemons>p{
+    text-align: start;
+}
+.moves>p{
+    text-align: start;
+}
+.team>p{
+    text-align: start;
+}
+.items>p{
+    text-align: start;
+}
+.bulbasaur{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -50px;
+
+}
+.moveimg{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -40px;
+    height: 80px;
+}
+.pokeball1{
+    position: absolute;
+    width: 54.05px;
+    height: 49.23px;
+    margin-left: 51.62px;
+    margin-top: -30px
+    
+}
+.pokeball3{
+    position: absolute;
+    width: 54.05px;
+    height: 49.23px;
+    margin-left: 30px;
+}
+.pokeball2{
+    position: absolute;
+    width: 54.05px;
+    height: 49.23px;
+    margin-left: 75.95px; 
+}
+.politoad{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: -50px;
+}
+.gengar1{
+    position: absolute;
+    margin-left: 72px;
+    margin-top: -60px;
+}
+.Blissey{
+    position: absolute;
+    margin-left:0px;
+    margin-top: -41px;   
+}
+.ampharos{
+    position: absolute;
+   margin-left: 60px;
+    margin-top: 10px;
+    z-index: 1;
+}
+.garchomp1{
+    position: absolute;
+    margin-left: 63px;
+    margin-top: -30px;
+}
+.gardevoir{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.header_darkmode_active{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: black;
+    border: 1px solid whitesmoke;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #F6F0ED;
+}
+.header_darkmode_active> button{
+    position: absolute;
+    margin-left: -750px;
+    background-color: #F6F0ED;
+    color: rgb(2, 2, 63);
+    margin-top: 5px;
+    padding: 3px;
+    border-radius: 12px 12px 12px 12px;
+    cursor: pointer;
+}
+.container_darkmode_active{
+    text-align: center;
+    position: relative;
+    margin-top: 3px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+}
+.pokemons_darkmode_active{
+    padding: 55px;
+    background-color: #F6F0ED;
+    color: black;
+    margin-right: 30px;
+    height: 50px;
+    border-radius: 20px 20px 20px 20px;
+    width: 200px;
+    cursor: pointer;
+}
+.items_darkmode_active{
+    padding: 55px;
+    background-color: #F6F0ED;
+    color: black;
+    margin-right: 20px;
+    height: 50px;
+    border-radius: 20px 20px 20px 20px;
+    width: 200px;
+    cursor: pointer;
+}
+.moves_darkmode_active{
+    padding: 55px;
+    background-color: #F6F0ED;
+    color: black;
+    margin-right: 20px;
+    height: 50px;
+    border-radius: 20px 20px 20px 20px;
+    width: 200px;
+    cursor: pointer;
+}
+.team_darkmode_active{
+    padding: 55px;
+    background-color: #F6F0ED;
+    color: black; 
+    margin-right: 20px;
+    height: 50px; 
+    border-radius: 20px 20px 20px 20px;
+    width: 200px;
+    cursor: pointer;
+}
