@@ -1,1 +1,13 @@
+.darkmode {
+    --bgcolor : #1E1E1E;
+    --cardbgcolor : #F6F0ED;
+    --textcolor : #1E1E1E;
+    --titlecolor : #F6F0ED;
+}
 
+.lightmode{
+    --bgcolor : #F6F0ED;
+    --cardbgcolor : #1E1E1E;
+    --textcolor : #F6F0ED;
+    --titlecolor : #1E1E1E;
+}

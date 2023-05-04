@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.detail_container {
+    background-color: var(--bgcolor);
+    height: 100%
+}
+h1{
+    color: var(--titlecolor);
+}
+.deail_inner_container {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 0px 15px;
+}
+.header_detail{
+    text-align: center;
+    font-size: 20px;
+    color: var(--titlecolor);
+    margin-bottom: 50px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   padding: 12px;
+   border-radius: 20px;
+}
+.img_des_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name_img_firstdiv {
+    position: relative;
+    margin-right: 100px;
+    height: 500px;
+    background-image: url('../images/background-day\ 1.png');
+    width: 700px;
+    border-radius: 20px;
+}
+
+.name_img_firstdiv>img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    height: 500px;
+}
+
+.name_img_firstdiv>p {
+    background: rgba(30, 30, 30, 0.57);
+    border: 1px solid #F6F0ED;
+    color: white;
+    border-radius: 16px;
+    top: 40px;
+    right: 15px;
+    position: absolute;
+    padding: 5px 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+    margin-left: 450px;
+}
+
+.backbutton {
+    background-color: rgba(30, 30, 30, 0.57);
+    position: absolute;
+    top: 9px;
+    left: 17%;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.backbutton img {
+    padding: 7px;
+}
+
+.des_info_parentdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.pokemon_info>h4,
+.description>h4 {
+    margin-bottom: 20px;
+}
+
+.pokemon_info,
+.description {
+    text-align: center;
+    max-width: 80%;
+    margin-inline: auto;
+    padding: 50px;
+    border-radius: 20px;
+    color: var(--titlecolor);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+}
+
+.description {
+    margin-bottom: 30px;
+}
+
+.status {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    text-align: center;
+    padding: 100px 0;
+    color: var(--titlecolor);
+}
+
+.info_detail {
+    display: grid;
+    /* margin-top: 30px;
+    margin-left: 40px; */
+    grid-gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.pokemon_stats {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+    padding: 50px;
+    margin-right: 100px;
+    border-radius: 20px;
+
+}
+
+.pokemon_stats>p {
+    margin-bottom: 20px;
+}
+
+.pokemon_stats_detail {
+    text-align: center;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.pokemon_stats_detail span {
+    display: block;
+    height: 30px;
+}
+
+.capture_rate {
+    margin-left: auto;
+    margin-right: 200px;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.capture_rate p {
+    margin-bottom: 15px;
+}
+
+.rate_percentage {
+    max-width: 100px;
+    max-height: 250px;
+}
+
+.evolutions {
+    font-size: 20px;
+    text-align: center;
+    color: #F6F0ED;
+}
+.evolutions P {
+    color: var(--titlecolor);
+}
+.totalevolutions{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+    height: 250px;
+}
+.evolution1,.evolution2,.evolution3{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+    width: 20%;
+    border-radius: 20px;
+    background-color:#1E1E1E;
+}
