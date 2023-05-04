@@ -13,25 +13,37 @@ import gengar1 from '../images/gengar 1.png'
 import politoad from '../images/politoad 1.png'
 import moonicon from '../images/moon.png'
 import sunicon from '../images/sun.png'
+import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 const FirstPage = () => {
-    const [darkmode, setDarkmode] = useState(false)
+    const [theme,setTheme] = useState("lightmode")
+
+    const toggletheme =()=>{
+     theme === "lightmode" ? setTheme ("darkmode") : setTheme("lightmode")
+    }
+    useEffect(()=>{
+     document.body.className= theme
+    //  console.log(theme);
+    },[theme])
+    const navigate = useNavigate()
     return (
         <>
             <div>
-                <div className={`header ${darkmode ? "header_darkmode_active" : "" }`}>Pokedex
-                    <button onClick={() => setDarkmode(!darkmode)}>{darkmode? <div><img src={moonicon}/></div> : <div><img src={sunicon}/></div>}</button></div>
-                <div className={`container ${darkmode ? "container_darkmode_active" : ""}`}>
-                    <div className={`pokemons ${darkmode ? "pokemons_darkmode_active" : ""}`} onClick={()=>console.log("pokemons")}><p>Pokemons</p>
+                <div className="header" > Pokedex
+                    <button onClick={() => toggletheme()}>{theme === "lightmode" ? <div>
+                        <img src={sunicon}/></div> : <div><img src={moonicon}/></div>}</button></div>
+                <div className="container">
+                    <div className="pokemons"  onClick={()=>console.log("pokemons")}><p>Pokemons</p>
                         <img src={bulbasaur} className='bulbasaur' />
                     </div>
-                    <div className={`items ${darkmode ? "items_darkmode_active" : ""}`} onClick={()=>console.log("items")}><p>Items</p>
+                    <div className="items" onClick={()=>console.log("items")}><p>Items</p>
                         <img src={pokeball1} className='pokeball1' />
                         <img src={pokeball2} className='pokeball2' />
                         <img src={pokeball3} className='pokeball3' />
                     </div>
-                    <div className={`moves ${darkmode ? "moves_darkmode_active" : ""}`} onClick={()=>console.log('moves')}><p>Moves</p>
+                    <div className="moves" onClick={()=>console.log('moves')}><p>Moves</p>
                         <img src={moves} className='moveimg' /></div>
-                    <div className={`team ${darkmode ? "team_darkmode_active" : ""}`} onClick={()=>console.log('team')}><p>Your Team</p>
+                    <div className="team" onClick={()=>navigate('/yourteam')}><p>Your Team</p>
                         <img src={politoad} className='politoad' />
                         <img src={gengar1} className='gengar1' />
                         <img src={Blissey} className='Blissey' />
