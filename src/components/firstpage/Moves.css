@@ -1,0 +1,135 @@
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: #f6f0ed;
+  border: 1px solid whitesmoke;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.moves_header img {
+  width: 30px;
+}
+.count {
+  position: relative;
+}
+.filter_count {
+  background-color: red;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  display: block;
+  font-size: 13px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color: aliceblue;
+}
+.search_moves {
+  text-align: center;
+  position: relative;
+  padding: 50px;
+  display: block;
+}
+.searchmoves_inner {
+  position: relative;
+  max-width: 700px;
+  margin-inline: auto;
+}
+.search_moves button {
+  padding: 12px 20px;
+  border-radius: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.search_moves input {
+  padding: 12px 20px;
+  border-radius: 20px;
+  width: 100%;
+
+  box-sizing: border-box;
+}
+.context {
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 70px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.text {
+  text-align: left;
+}
+.text-1 {
+  text-align: left;
+  font-weight: bold;
+}
+
+.cardbody {
+  display: flex;
+  padding: 0;
+  align-items: center;
+}
+.moves_container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.cardid {
+  text-align: left;
+}
+.context > .card {
+  position: relative;
+  padding: 20px;
+  background-color: black;
+  color: #f6f0ed;
+  height: 130px;
+  border-radius: 20px 20px 20px 20px;
+  width: 200px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card_left {
+    text-align: left;
+    padding-left: 15px;
+}
+.card_left h2 {
+    margin-bottom: 22px;
+    margin-top: 12px;
+}
+.card_left .grass, .card_left .circle{
+    /* background-color: transparent; */
+    border: none;
+    background-color: #5FBD58;
+    padding: 6px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin-right: 18px;
+}
+.card_left .circle {
+    background-color: #B763CF;
+
+}
+.card_left .grass img, .card_left .circle img{
+    width: 100%;
+}
+
+
+.moves_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.card_img .bulbasaur{
+    position: absolute;
+    right: -39px;
+    top: 50%;
+    /* transform: translateY(-50%); */
+}
