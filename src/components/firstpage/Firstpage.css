@@ -35,7 +35,7 @@ button>div>img{
     justify-content: center;
     align-items:center;
     height: 100vh;
-}
+} 
 
 .pokemons{
     padding: 55px;
@@ -66,7 +66,7 @@ button>div>img{
     border-radius: 20px 20px 20px 20px;
     width: 200px;
     cursor: pointer;
-}
+}  
 .team{
     padding: 55px;
     background-color: black;
