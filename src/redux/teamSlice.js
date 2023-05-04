@@ -78,13 +78,6 @@ const pokemondeatilSlice = createSlice({
                 }
             }
         },
-        // removeMember(state,action) {
-        //     return {
-        //         ...state,
-        //         removeMember:[action.payload],
-        //         member: state.member - 1
-        //     }
-        // }
     },
     extraReducers: (builder) => {
         builder
