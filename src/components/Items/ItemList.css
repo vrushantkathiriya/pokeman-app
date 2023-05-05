@@ -1,0 +1,220 @@
+body{
+  background-color: whitesmoke;
+}
+
+.search-items input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.pokemon-card {
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
+  background: #1E1E1E;
+  /* Shadow light */
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #ffff;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  width: 280px;
+  height: 160px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.pokemon-card h3 {
+  margin: 0;
+}
+
+.card-name {
+  position: absolute;
+  width: 33px;
+  height: 16px;
+  left: 20px;
+  top: 20px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.item-img {
+  display: flex;
+  justify-content: center;
+}
+
+
+.inner-img-1 {
+  /* position: absolute; */
+  width: 54.05px;
+  height: 49.23px;
+}
+
+.inner-img-2 {
+  /* position: absolute; */
+  width: 54.05px;
+  height: 49.23px;
+}
+
+.inner-img-3 {
+  /* position: absolute; */
+  width: 54.05px;
+  height: 49.23px;
+}
+
+
+.pokemon-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 120px;
+  grid-row-gap: 30px;
+  margin-top: 30px;
+}
+
+.pokemon-container .pokemon-card {
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.pokemon-container .pokemon-card .item-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pokemon-container .pokemon-card .item-img img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.pokemon-container .pokemon-card .item-img img:nth-child(1) {
+  top: 48px;
+  right: 54px;
+}
+
+.pokemon-container .pokemon-card .item-img img:nth-child(2) {
+  top: 66px;
+  right: 65px;
+  z-index: 1;
+}
+
+.pokemon-container .pokemon-card .item-img img:nth-child(3) {
+  top: 66px;
+  right: 40px;
+}
+
+.header_darkmode_active {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: black;
+  border: 1px solid whitesmoke;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #F6F0ED;
+}
+
+.header_darkmode_active>button {
+  position: absolute;
+  margin-left: -750px;
+  background-color: #F6F0ED;
+  color: rgb(2, 2, 63);
+  margin-top: 5px;
+  padding: 3px;
+  border-radius: 12px 12px 12px 12px;
+  cursor: pointer;
+}
+
+
+.pokemon-card h3 {
+  font-size: 14px;
+  line-height: 16px
+  ;line-height: 100%;
+}
+
+.pokemon-card.pokemon-card-dark {
+  background-color: #F6F0ED;
+}
+
+.pokemon-card.pokemon-card-dark h3,
+.pokemon-card.pokemon-card-dark .card-name {
+  color: #1E1E1E;
+}
+
+.search-items {display: block;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.search-items input {width: 100%;
+  border-radius: 30px;
+  outline: none;
+  padding: 8px 15px;
+  background-color: #CCCCCC;
+  color: #000000;
+}
+
+.pagination-wrap {display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.pagination-wrap .pagination {display: flex;
+  grid-column-gap: 15px;
+}
+
+.pagination-wrap .pagination button:first-child,
+.pagination-wrap .pagination button:last-child {
+  border: none;
+  background: #1E1E1E;
+  padding: 3px 10px;
+  height: 30px;
+  width: auto;
+  border-radius: 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.pagination-wrap .pagination button {
+  border: none;
+  background: #1E1E1E;
+  padding: 3px 5px;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.pagination-wrap .pagination button.active {
+  background: #A8A8A8;
+}
+
+
+.header_darkmode_active .pagination-wrap .pagination button:first-child,
+.header_darkmode_active .pagination-wrap .pagination button:last-child {
+  background: #A8A8A8;
+  color: #FFFFFF;}
+.header_darkmode_active .pagination-wrap .pagination button {
+  border: none;
+  background: #A8A8A8;
+  color: #FFFFFF;
+}
+.header_darkmode_active .pagination-wrap .pagination button.active {
+  background: #FFFFFF;
+  color: #1E1E1E;
+}
