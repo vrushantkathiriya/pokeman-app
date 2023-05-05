@@ -6,3 +6,4 @@ export const rootReducer = {
 export const store = configureStore({
     reducer: rootReducer,
 }); 
+
