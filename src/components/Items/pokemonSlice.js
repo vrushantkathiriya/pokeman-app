@@ -10,15 +10,14 @@ const initialState = {
 export const getItemById = createAsyncThunk(
     "item/getItemById",
     async (id, thunkAPI) => {
-        try {
-            const response = await axios.get(`https://pokeapi.co/api/v2/item/${id}`);
-            return response.data;
-        } catch (error) {
-            return thunkAPI.rejectWithValue(error.message);
-        }
+      try {
+        const response = await axios.get(`https://pokeapi.co/api/v2/item/${id}`);
+        return response.data;
+      } catch (error) {
+        return thunkAPI.rejectWithValue(error.message);
+      }
     }
-);
-
+  );
 const pokemonSlice = createSlice({
     name: "pokemon",
     initialState,
