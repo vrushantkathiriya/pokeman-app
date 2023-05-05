@@ -12,7 +12,7 @@ const Moves = () => {
   useEffect(() => {
     dispatch(allmoves());
   }, []);
-  const [movesApi, setMovesApi] = useState([]);
+  // const [movesApi, setMovesApi] = useState([]);
   const [filterMoves, setFilterMoves] = useState("");
   const [showfilter, sethidefilter] = useState(false);
 
@@ -39,7 +39,7 @@ const Moves = () => {
             <input
               type="text"
               onChange={(e) => setFilterMoves(e.target.value)}
-              placeholder="Search Moves"/>
+              placeholder="Search Moves" />
             <button>
               <i className="fa fa-search" aria-hidden="true"></i>
             </button>
