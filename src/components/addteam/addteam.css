@@ -1,0 +1,61 @@
+ @import url('../../App.css');
+
+.addedmember_container{
+    background-color: var(--bgcolor);
+    height: 100vh;
+}
+h4{
+    flex-basis: 100%;
+    margin-bottom: 100px;
+    padding: 10px;
+    color: var(--titlecolor);
+}
+.addedmember_header h2{
+    color: var(--titlecolor);
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+    border-radius: 15px;
+    padding: 10px;
+}
+.added_name{
+    color: var(--titlecolor);
+}
+.addedmember{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10%;
+}
+.addmemberbtn{
+    flex-basis: 100%;
+    text-align: center;
+}
+.img_member{
+    position: absolute;
+    left: -78px;
+}
+.divdiv{
+    position: relative;    
+    height: 150px;
+    width: 58px;
+}
+.submitbtn1{
+    margin-right: 40px;
+    padding: 7px;
+    border-radius: 15px;
+    background-color: cadetblue;
+    border: none;
+}
+.submitbtn2{
+    margin-right: 40px;
+    padding: 7px;
+    border-radius: 15px;
+    background-color: cadetblue;
+    border: none;
+}
+.submitbtn3{
+    padding: 7px;
+    border-radius: 15px;
+    background-color: cadetblue;
+    border: none;
+}
